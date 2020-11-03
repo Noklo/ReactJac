@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardImgOverlay,CardText, CardBody,CardTitle } from 'reactstrap';
+import DishDetail from './DishDetailComponent';
+
 
 class Menu extends Component {
     
@@ -9,44 +11,30 @@ class Menu extends Component {
         this.state = {
             selectedDish: null
         }
+        console.log("Menu componen constructor is invoqued")
+    }
+
+    componentDidMount(){
+        console.log("menu componentDidMount called")
     }
 
     onDishSelect(dish) {
         this.setState({selectedDish: dish})
     }
 
-    rednderDish(dish){
-        if(dish != null) {
-            return(
-                <Card>
-                    <CardImg width="100%" object src={dish.image} alt={dish.name} />
-                    <CardBody>
-                        <CardTitle>{dish.name}</CardTitle>
-                         <CardText>{dish.description}</CardText>
-                    </CardBody>
-                </Card>
-            )
-
-        }
-        else {
-            return(
-                <div></div>
-            );
-        }
-    }
-
     render() {
-        
+        console.log("menu render method called")
         const menu = this.props.dishes.map((dish) => {
             return (
-              <div key={dish.id} className="col-12 col-md-5 m-1">
-                <Card onClick={() => this.onDishSelect(dish)}> 
+                <div  className="col-12 col-md-5 m-1" key={dish.id}>
+                <Card 
+                onClick={() => this.onDishSelect(dish)}> 
                 <CardImg width="100%" object src={dish.image} alt={dish.name} />
                   <CardImgOverlay>
                     <CardTitle>{dish.name}</CardTitle>
                   </CardImgOverlay>
                 </Card>
-              </div>
+                </div>
             );
         });
 
@@ -55,9 +43,7 @@ class Menu extends Component {
             <div className="row">
                   {menu}
             </div>
-            <div className="row">
-                {this.rednderDish(this.state.selectedDish)}
-            </div>
+            <DishDetail selectedDish={this.state.selectedDish}/>
           </div>
         );
     }
