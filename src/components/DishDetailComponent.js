@@ -40,7 +40,6 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
         }
 
         const  DishDetail = (props) => {
- 
             if (props.dish != null)
             return (
             <div className="container">
