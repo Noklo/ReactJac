@@ -1,6 +1,10 @@
 # Web App with Create React App
 
-Web Application about a restaurant using react.
+Web Application about a restaurant using react. 
+
+# 05/11/2020
+
+Funtional Components Include
 
 # Getting Started with Create React App
 
