@@ -6,6 +6,10 @@ Web Application about a restaurant using react.
 
 Funtional Components Include
 
+# 07/11/2020
+
+Footer And Header
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
