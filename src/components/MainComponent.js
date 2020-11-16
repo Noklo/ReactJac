@@ -4,7 +4,7 @@ import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import DishDetail from './DishDetailComponent';
-import Header from './HeaderComponent.js'
+import Header from './HeaderComponent'
 import Footer from './FooterComponent.js'
 import { DISHES } from '../shared/dishes';
 import { COMMENTS } from '../shared/comments';
