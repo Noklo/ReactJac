@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class Contact extends Component {
@@ -164,8 +164,5 @@ class Contact extends Component {
     );
 }
 }
-<<<<<<< HEAD
 export default Contact;
-=======
-export default Contact;
->>>>>>> ecd325c3a656753ab272e9ed4c21b4ec07057741
+
