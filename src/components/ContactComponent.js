@@ -164,4 +164,8 @@ class Contact extends Component {
     );
 }
 }
+<<<<<<< HEAD
 export default Contact;
+=======
+export default Contact;
+>>>>>>> ecd325c3a656753ab272e9ed4c21b4ec07057741
